@@ -8,7 +8,7 @@
 ### Installation
 
 ```bash
-$ yarn add https://github.com/andresmichel/react-native-split-view
+$ npm install react-native-split-view
 ```
 
 ### Properties
