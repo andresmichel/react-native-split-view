@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 import {
   View,
   StyleSheet,
-  Platform,
 } from 'react-native'
-
-const isPad = Platform.OS === 'ios' ? Platform.isPad : width > 500
+import { isPad } from 'react-native-layout-constants'
 
 export default class SplitView extends React.Component {
   render() {
