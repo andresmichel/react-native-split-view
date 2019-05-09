@@ -4,7 +4,7 @@ import {
   View,
   StyleSheet,
 } from 'react-native'
-import { isPad } from 'react-native-layout-constants'
+import { isPad, statusBarHeight } from 'react-native-layout-constants'
 
 export default class SplitView extends React.Component {
   render() {
@@ -50,5 +50,6 @@ const styles = StyleSheet.create({
   },
   rightContainer: {
     flex: 1,
+    paddingTop: isPad ? statusBarHeight : 0,
   },
 })
